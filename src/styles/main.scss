@@ -1,0 +1,41 @@
+@import "./pagination.scss";
+@import "./listing.scss";
+@import "./detail.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #383838;
+  font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+  margin: 0;
+  background-color: whitesmoke;
+
+  #root {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: powderblue;
+      height: 60px;
+    }
+    .main {
+      padding: 8px 24px;
+      .index {
+        height: 100%;
+      }
+    }
+    footer {
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: ivory;
+    }
+  }
+}

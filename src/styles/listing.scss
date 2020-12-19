@@ -1,0 +1,35 @@
+.listing-wrapper {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 80px 1fr 100px;
+  form {
+    input {
+      border: solid 2px powderblue;
+      border-radius: 10px;
+      height: 50px;
+      width: 200px;
+      font-size: larger;
+    }
+    justify-self: center;
+    align-self: center;
+  }
+  .content {
+    justify-self: center;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 20px;
+    p {
+      grid-column: 1/4;
+    }
+    .movie-wrapper {
+      justify-self: center;
+      width: 200px;
+      text-align: center;
+      img {
+        width: 180px;
+      }
+    }
+  }
+}
