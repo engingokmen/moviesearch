@@ -1,13 +1,20 @@
 git clone https://github.com/engingokmen/moviesearch.git
 
-cd jobsearch
+cd moviesearch
 
 **start project**
 
+start project on development:
+
 ```shell
 $ npm install
+$ npm run dev
+```
+
+get production files:
+
+```shell
 $ npm run build
-$ npm run serve
 ```
 
 features:
